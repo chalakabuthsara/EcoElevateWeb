@@ -1,0 +1,86 @@
+
+#editorheader {
+    font-size: 32px;
+    color: #004a38;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+body {
+    padding: 0;
+}
+#CBaboutme {
+    text-align: center;
+    padding: 20px 37px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.30);
+    margin: 30px;
+    margin-right: 400px;
+    margin-left: 400px;
+}
+
+#CBaboutme img {
+    width: auto;
+    height: 350px;
+}
+
+.collapsible {
+    text-align: left;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+}
+
+.collapsible img {
+    height: 20px; 
+    width: auto; 
+}
+
+.content {
+    text-align: center;
+    padding: 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    transition: max-height 0.2s ease-out;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.collapsible.active img {
+    transform: rotate(180deg); /* Rotates the arrow when the collapsible is active */
+}
+
+.collapsible-container {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+
+.active,
+.collapsible:hover {
+    background-color: white;
+}
+
+.active {
+    border-radius: 10px 10px 0 0;
+}
+
+.content a {
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #004a38;
+    font-weight: bold;
+    border: 3px solid #004a38;
+}

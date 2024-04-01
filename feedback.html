@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoElevate</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/feedback.css">
+    <script src="javaScript/feedback.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">EcoElevate</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="feedback.html" class="active">Contact Us</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form id="feedbackForm" action="mailto:chalaka.20230630@gmail.com" method="post" enctype="text/plain">
+        <h2>Leave us your feedback</h2>
+
+        <span id="requiredtext">* Required fields</span><br><br>
+
+        <label for="name" class="label"><sup>*</sup>Name: </label>
+        <input type="text" name="Name" id="name" placeholder="Enter your name" class="input">
+        <span id="name-error" class="error-message"></span><br><br>
+
+        <label for="email" class="label"><sup>*</sup>Email: </label>
+        <input type="email" name="Email" id="email" placeholder="Enter your email" class="input">
+        <span id="email-error" class="error-message"></span><br><br>
+
+        <label><sup>*</sup>Was this your first time visiting the website ?</label>
+        <span id="visitradio-error" class="error-message"></span> <br>
+
+        <input type="radio" name="First Visit" id="yes" value="yes">
+        <label for="yes"><span class="option">Yes</span></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="First Visit" id="no" value="no">
+        <label for="no"><span class="option">No</span></label><br><br>
+
+        <label><sup>*</sup>Was this website informative and easy to navigate through ?</label>
+        <span id="navigationradio-error" class="error-message"></span> <br>
+
+        <input type="radio" name="Is it easy to navigate" id="navyes" value="yes">
+        <label for="navyes"><span class="option">Yes</span></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="Is it easy to navigate" id="navno" value="no">
+        <label for="navno"><span class="option">No</span></label><br><br>
+
+        <label for="suggestions" class="label">if “No” suggest any improvements for the future</label><br>
+        <textarea name="suggestions" id="suggestions" class="input"></textarea><br><br>
+
+        <label for="satisfaction">How satisfied are you with our services? Choose from 1 to 10, with 1 being “Not
+            satisfied at all” and 10 being “Extremely satisfied!”</label><br><br>
+        <div id="rangenumbers">1 2 3 4 5 6 7 8 9 10</div>
+        <input type="range" id="satisfaction" name="Satisfaction" value="1" min="1" max="10" step="1"><br><br>
+
+        <label><sup>*</sup>Would you recommend our services ?</label>
+        <span id="recommendradio-error" class="error-message"></span> <br>
+
+        <input type="radio" name="Recommendation" id="recyes" value="yes">
+        <label for="recyes"><span class="option">Yes</span></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="Recommendation" id="recno" value="no">
+        <label for="recno"><span class="option">No</span></label><br><br>
+
+
+        <label>Would you like to receive updates about the website and any offer ?</label><br><br>
+        <select class="subscription-select" name="Would you like to receive updates about the website and any offers ?">
+            <option value="yes-via email">Yes - via email</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="questions" class="label">Do you have any additional questions or requests ?</label><br>
+        <textarea name="questions" id="questions" class="input"></textarea><br><br>
+
+
+        <input type="submit" name="submit" value="Submit" id="sendButton">
+
+        <button type="button" onclick="previewForm()">Preview</button>
+    </form>
+    <!-- Preview Modal -->
+    <div id="previewModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Form Preview</h2>
+            <div id="previewContent">Form preview will appear here...</div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="logo">
+            Ecoelevate
+        </div>
+        <div class="footer-links">
+            <div>
+                <a href="home.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="shop.html">Shop</a>
+            </div>
+            <div>
+                <a href="team.html">Team</a>
+                <a href="feedback.html">Contact Us</a>
+                <a href="profile.html">User Profile</a>
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>&copy; 2024 — Copyright</p>
+            <p>Page by <a href="CBeditor.html">Chalaka Buthsara</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

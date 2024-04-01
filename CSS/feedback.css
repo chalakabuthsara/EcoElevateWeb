@@ -1,0 +1,176 @@
+form {
+    background-color: white;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 20px 236px;
+    text-align: center;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.30);
+}
+
+h2 {
+    color: #008060;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+label {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#requiredtext {
+    color: red;
+    font-size: 16px
+}
+
+input[type="text"],
+input[type="email"] {
+    font-size: 16px;
+    padding-left: 5px;
+    width: 396px;
+    margin: 10px;
+    height: 35px;
+    border-radius: 5px;
+    background: #CAE9E8;
+    box-shadow: none;
+    border: 1.5px solid #008060;
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+textarea {
+    font-size: 16px;
+    padding: 10px;
+    width: 450px;
+    height: 179px;
+    border-radius: 10px;
+    background: #CAE9E8;
+    box-shadow: none;
+    border: 1.5px solid #008060;
+}
+
+input[type="range"] {
+    width: 410px;
+    background-color: black;
+}
+
+#rangenumbers {
+    word-spacing: 30px;
+}
+
+.option {
+    font-weight: 400;
+}
+
+.subscription-select {
+    background: #CAE9E8;
+    border: 2px solid #008060;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    border-radius: 10px;
+    background: #4FB8B3;
+    padding: 10px 24px;
+    border: 1px solid #4FB8B3;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+button {
+    border-radius: 10px;
+    background: white;
+    padding: 10px 24px;
+    border: 1px solid #4FB8B3;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4FB8B3;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4FB8B3;
+    color: white;
+}
+
+.input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: #4FB8B3;
+}
+
+/* Modal Styling */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 15px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+sup {
+    color: red;
+    font-size: 14px;
+}
+
